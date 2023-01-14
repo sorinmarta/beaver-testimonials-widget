@@ -24,6 +24,10 @@ p, h3{
     flex:20;
 }
 
+.sm-testimonial-arrows p svg{
+    cursor: pointer;
+}
+
 .sm-testimonial-names{
     flex:80;
     padding:0 10px;
@@ -34,6 +38,7 @@ p, h3{
     border: 2px solid #262626;
     border-radius: 5px;
     margin-top:20px;
+    cursor: pointer;
 }
 .sm-testimonial-name-wrap:first-child{
     margin-top: 0;
@@ -47,12 +52,12 @@ p, h3{
     font-size:22px;
     font-weight: 600;
     margin-bottom: 5px;
-    margin-top:10px;
+    margin-top:5px;
 }
 
 .sm-testimonial-name-wrap img{
     max-width:90px;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 .sm-testimonial-contents{
@@ -69,4 +74,8 @@ p, h3{
 .sm-testimonial-contents p{
     margin-bottom:0;
     font-size:22px;
+}
+
+.sm-testimonial-active{
+    background-color:#B1C4B5;
 }
