@@ -10,6 +10,7 @@ p, h3{
 
 .sm-testimonial-column{
     flex:50;
+    padding-right: 20px;
 }
 
 .sm-testimonial-first-column{
