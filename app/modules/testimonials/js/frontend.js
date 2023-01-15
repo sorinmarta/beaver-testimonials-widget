@@ -16,7 +16,7 @@ const getActiveTestimonial = () => {
 
 const populateContents = (testimonial) => {
     contentsHeading.textContent = testimonial.getAttribute('testimonial-heading');
-    contentsParagraph.textContent = testimonial.getAttribute('testimonial-paragraph');
+    contentsParagraph.innerHTML = testimonial.getAttribute('testimonial-paragraph');
 }
 
 const initTestimonial = () => {

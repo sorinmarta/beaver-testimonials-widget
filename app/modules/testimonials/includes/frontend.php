@@ -1,21 +1,21 @@
 <div class="sm-testimonials-wrap">
     <div class="sm-testimonial-column sm-testimonial-first-column">
         <div class="sm-testimonial-names">
-            <div class="sm-testimonial-name-wrap sm-shadow-class sm-testimonial-active" testimonial-heading="Sorin is knowledgeable, timely and extremely responsive." testimonial-paragraph="I’ve had the pleasure of working with Sorin on several web development projects in multiple industries. Sorin is knowledgeable, timely and extremely responsive. He works hard to make certain that the client’s needs are met and that their technology looks well, performs excellent and is extremely secure to avoid any risk of data being compromised. I will continue to work with Sorin on multiple projects in the future.">
-                <p>Victor Dorfman 1</p>
-                <img src="https://sorinmarta.com/wp-content/uploads/2019/11/mermberfix_logo_x200.png.webp" alt="Victor Dorfman">
+            <div class="sm-testimonial-name-wrap sm-shadow-class sm-testimonial-active" testimonial-heading="<?php echo $settings->one_content_heading; ?>" testimonial-paragraph="<?php echo esc_html($settings->one_content_text); ?>">
+                <p><?php echo $settings->one_customer_name;?></p>
+                <img src="<?php echo wp_get_attachment_image_url($settings->one_logo, array(89,39)); ?>" alt="<?php echo $settings->one_customer_name;?>">
             </div>
-            <div class="sm-testimonial-name-wrap sm-shadow-class" testimonial-heading="Second Testimonial" testimonial-paragraph="This is my second testimonial">
-                <p>Victor Dorfman 2</p>
-                <img src="https://sorinmarta.com/wp-content/uploads/2019/11/mermberfix_logo_x200.png.webp" alt="Victor Dorfman">
+            <div class="sm-testimonial-name-wrap sm-shadow-class" testimonial-heading="<?php echo $settings->two_content_heading; ?>" testimonial-paragraph="<?php echo esc_html($settings->two_content_text); ?>">
+                <p><?php echo $settings->two_customer_name;?></p>
+                <img src="<?php echo wp_get_attachment_image_url($settings->two_logo, array(89,39)); ?>" alt="<?php echo $settings->two_customer_name;?>">
             </div>
-            <div class="sm-testimonial-name-wrap sm-shadow-class">
-                <p>Victor Dorfman 3</p>
-                <img src="https://sorinmarta.com/wp-content/uploads/2019/11/mermberfix_logo_x200.png.webp" alt="Victor Dorfman">
+            <div class="sm-testimonial-name-wrap sm-shadow-class" testimonial-heading="<?php echo $settings->three_content_heading; ?>" testimonial-paragraph="<?php echo esc_html($settings->three_content_text); ?>">
+                <p><?php echo $settings->three_customer_name;?></p>
+                <img src="<?php echo wp_get_attachment_image_url($settings->three_logo, array(89,39)); ?>" alt="<?php echo $settings->three_customer_name;?>">
             </div>
-            <div class="sm-testimonial-name-wrap sm-shadow-class">
-                <p>Victor Dorfman 4</p>
-                <img src="https://sorinmarta.com/wp-content/uploads/2019/11/mermberfix_logo_x200.png.webp" alt="Victor Dorfman">
+            <div class="sm-testimonial-name-wrap sm-shadow-class" testimonial-heading="<?php echo $settings->four_content_heading; ?>" testimonial-paragraph="<?php echo esc_html($settings->four_content_text); ?>">
+                <p><?php echo $settings->four_customer_name;?></p>
+                <img src="<?php echo wp_get_attachment_image_url($settings->four_logo, array(89,39)); ?>" alt="<?php echo $settings->four_customer_name;?>">
             </div>
         </div>
     </div>

@@ -3,8 +3,8 @@
 class SMARTA_Testimonials extends FLBuilderModule{
     public function __construct(){
         parent::__construct(array(
-            'name' => __('Testimonials', SMARTA_SLUG),
-            'description' => __('Add a nice testimonials widget where you can advertise your testimonials', SMARTA_SLUG),
+            'name' => __('Testimonials Menu', SMARTA_SLUG),
+            'description' => __('Add a nice testimonials widget where you can advertise your testimonials as a little menu', SMARTA_SLUG),
             'group' => __('Sorin Marta', SMARTA_SLUG),
             'category' => __('Sorin Marta', SMARTA_SLUG),
             'dir' => SMARTA_MODULES . '/testimonials/',
@@ -14,47 +14,48 @@ class SMARTA_Testimonials extends FLBuilderModule{
 }
 
 FLBuilder::register_module( 'SMARTA_Testimonials', array(
-    'first-testimonial'      => array(
+    'testimonial-content'      => array(
         'title'    => __( 'Testimonials Content', SMARTA_SLUG ),
         'sections' => array(
             'first-testimonial' => array(
                 'title' => __('First Testimonial', SMARTA_SLUG),
                 'fields' => array(
-                    'heading' => array(
+                    'one_customer_name' => array(
                         'type' => 'text',
                         'label' => __('Customer Name', SMARTA_SLUG)
                     ),
-                    'logo' => array(
+                    'one_logo' => array(
                         'type' => 'photo',
                         'label' => __('Logo', SMARTA_SLUG)
                     ),
-                    'content-heading' => array(
+                    'one_content_heading' => array(
                         'type' => 'text',
                         'label' => __('Content Heading', SMARTA_SLUG)
                     ),
-                    'content-text' => array(
+                    'one_content_text' => array(
                         'type' => 'editor',
                         'label' => __('Content Text', SMARTA_SLUG),
-                        'media_buttons' => false
+                        'media_buttons' => false,
+                        'wpautop'       => true
                     )
                 )
             ),
             'second-testimonial' => array(
                 'title' => __('Second Testimonial', SMARTA_SLUG),
                 'fields' => array(
-                    'heading' => array(
+                    'two_customer_name' => array(
                         'type' => 'text',
                         'label' => __('Customer Name', SMARTA_SLUG)
                     ),
-                    'logo' => array(
+                    'two_logo' => array(
                         'type' => 'photo',
                         'label' => __('Logo', SMARTA_SLUG)
                     ),
-                    'content-heading' => array(
+                    'two_content_heading' => array(
                         'type' => 'text',
                         'label' => __('Content Heading', SMARTA_SLUG)
                     ),
-                    'content-text' => array(
+                    'two_content_text' => array(
                         'type' => 'editor',
                         'label' => __('Content Text', SMARTA_SLUG),
                         'media_buttons' => false
@@ -64,19 +65,19 @@ FLBuilder::register_module( 'SMARTA_Testimonials', array(
             'third-testimonial' => array(
                 'title' => __('Third Testimonial', SMARTA_SLUG),
                 'fields' => array(
-                    'heading' => array(
+                    'three_customer_name' => array(
                         'type' => 'text',
                         'label' => __('Customer Name', SMARTA_SLUG)
                     ),
-                    'logo' => array(
+                    'three_logo' => array(
                         'type' => 'photo',
                         'label' => __('Logo', SMARTA_SLUG)
                     ),
-                    'content-heading' => array(
+                    'three_content_heading' => array(
                         'type' => 'text',
                         'label' => __('Content Heading', SMARTA_SLUG)
                     ),
-                    'content-text' => array(
+                    'three_content_text' => array(
                         'type' => 'editor',
                         'label' => __('Content Text', SMARTA_SLUG),
                         'media_buttons' => false
@@ -86,27 +87,25 @@ FLBuilder::register_module( 'SMARTA_Testimonials', array(
             'fourth-testimonial' => array(
                 'title' => __('Fourth Testimonial', SMARTA_SLUG),
                 'fields' => array(
-                    'heading' => array(
+                    'four_customer_name' => array(
                         'type' => 'text',
                         'label' => __('Customer Name', SMARTA_SLUG)
                     ),
-                    'logo' => array(
+                    'four_logo' => array(
                         'type' => 'photo',
                         'label' => __('Logo', SMARTA_SLUG)
                     ),
-                    'content-heading' => array(
+                    'four_content_heading' => array(
                         'type' => 'text',
                         'label' => __('Content Heading', SMARTA_SLUG)
                     ),
-                    'content-text' => array(
+                    'four_content_text' => array(
                         'type' => 'editor',
                         'label' => __('Content Text', SMARTA_SLUG),
                         'media_buttons' => false
                     )
                 )
-            ),
+            )
         )
     )
   ) );
-
-new SMARTA_Testimonials();

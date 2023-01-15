@@ -34,7 +34,8 @@ class Beaver_Testimonials_Widget{
 
     public function load_modules(): void
     {
-        require SMARTA_MODULES . '/testimonials/testimonials.php';
+        require SMARTA_MODULES . '/testimonials/smarta_testimonials.php';
+//	    require SMARTA_MODULES . '/home-portfolio/hks-home-portfolio.php';
     }
 }
 
