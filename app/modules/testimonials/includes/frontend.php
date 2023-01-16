@@ -3,7 +3,7 @@
         <div class="sm-testimonial-names">
             <div class="sm-testimonial-name-wrap sm-shadow-class sm-testimonial-active" testimonial-heading="<?php echo $settings->one_content_heading; ?>" testimonial-paragraph="<?php echo esc_html($settings->one_content_text); ?>">
                 <p><?php echo $settings->one_customer_name;?></p>
-                <img src="<?php echo wp_get_attachment_image_url($settings->one_logo, array(89,39)); ?>" alt="<?php echo $settings->one_customer_name;?>">
+                <img src="<?php echo wp_get_attachment_image_url($settings->one_logo); ?>" alt="<?php echo $settings->one_customer_name;?>">
             </div>
             <div class="sm-testimonial-name-wrap sm-shadow-class" testimonial-heading="<?php echo $settings->two_content_heading; ?>" testimonial-paragraph="<?php echo esc_html($settings->two_content_text); ?>">
                 <p><?php echo $settings->two_customer_name;?></p>
